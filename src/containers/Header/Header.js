@@ -4,7 +4,7 @@ import { Head } from './styled';
 const Header = () => {
   return (
     <Head>
-      head
+      
     </Head> 
   );
 };

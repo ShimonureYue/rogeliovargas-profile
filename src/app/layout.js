@@ -1,4 +1,4 @@
-import App from './App';
+import Layout from '@/components/Layout';
 
 export const metadata = {
   title: 'Rogelio Vargas',
@@ -7,6 +7,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <App>{ children }</App>
+    <Layout>{ children }</Layout>
   )
 }

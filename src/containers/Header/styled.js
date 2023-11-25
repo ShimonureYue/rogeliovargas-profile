@@ -8,5 +8,7 @@ export const Head = styled.header`
   left: 0;
   color: ${white};
   width: 100%;
-  background: ${darkGray}
+  background: ${darkGray};
+  margin-left: 30px;
+  margin-right: 30px;
 `;
