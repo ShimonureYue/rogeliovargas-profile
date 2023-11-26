@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { dark } from '@/app/colors';
 
-export const Container = styled.div`
+export const Container = styled.main`
   position: relative;
   margin: 30px;
 `;
@@ -13,6 +13,7 @@ export const LineTop = styled.div`
   width: 100%;
   height: 30px;
   background:  ${dark};
+  z-index: 2;
 `;
 
 export const LineLeft = styled.div`
@@ -22,6 +23,7 @@ export const LineLeft = styled.div`
   width: 30px;
   height: 100%;
   background:  ${dark};
+  z-index: 2;
 `;
 
 export const LineRight = styled.div`
@@ -31,6 +33,7 @@ export const LineRight = styled.div`
   width: 30px;
   height: 100%;
   background:  ${dark};
+  z-index: 2;
 `;
 
 export const LineBottom = styled.div`
@@ -40,5 +43,29 @@ export const LineBottom = styled.div`
   width: 100%;
   height: 30px;
   background:  ${dark};
+  z-index: 2;
+`;
+
+export const Content = styled.div`
+  margin: 0 auto;
+  max-width: 1060px;
+  overflow: hidden;
+`;
+
+export const VerticalCenter = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+`;
+
+export const HorizontalCenter =  styled.div`
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+`;
+
+export const Section = styled.div`
+  position: relative;
+  text-align: center;
 `;
 

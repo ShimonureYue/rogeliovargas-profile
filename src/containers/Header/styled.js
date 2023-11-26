@@ -9,6 +9,11 @@ export const Head = styled.header`
   color: ${white};
   width: 100%;
   background: ${darkGray};
-  margin-left: 30px;
-  margin-right: 30px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+`;
+
+export const Content = styled.div`
+  padding: 30px 65px 15px 65px;
 `;

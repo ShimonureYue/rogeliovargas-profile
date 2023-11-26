@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', sans;
     font-size: 16px;
     color: ${lightGray};
-    height: 100%;
     margin: 0;
   }
   
