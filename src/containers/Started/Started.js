@@ -1,6 +1,6 @@
 'use client'
 import { useFullHeight } from '@/hooks';
-import { Content, VerticalCenter, HorizontalCenter, Section } from '@/components/styled';
+import { Content, VerticalCenter, HorizontalCenter, Section } from '@/app/styled';
 import { StartedContent } from './styled';
 
 const Started = () => {

@@ -55,6 +55,7 @@ export const Content = styled.div`
 export const VerticalCenter = styled.div`
   display: table-cell;
   vertical-align: middle;
+  height: calc( 100vh - 60px);
 `;
 
 export const HorizontalCenter =  styled.div`

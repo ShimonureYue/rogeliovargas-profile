@@ -5,7 +5,7 @@ import {
   VerticalCenter,
   HorizontalCenter,
   Section,
-} from '@/components/styled';
+} from '@/app/styled';
 
 export default function About() {
   const styleHeight = useFullHeight();
@@ -19,11 +19,11 @@ export default function About() {
         </HorizontalCenter>
       </Section>
 
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -32,7 +32,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -54,18 +54,18 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='clear'></div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -74,7 +74,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -96,18 +96,18 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='clear'></div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -116,7 +116,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -138,18 +138,18 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='clear'></div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -158,7 +158,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -180,18 +180,18 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='clear'></div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -200,7 +200,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -222,18 +222,18 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='clear'></div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -242,7 +242,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -264,18 +264,18 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
-      <div class='title'>
-        <div class='title_inner'>About Me</div>
+      <div className='clear'></div>
+      <div className='title'>
+        <div className='title_inner'>About Me</div>
       </div>
-      <div class='image'>asd</div>
-      <div class='desc'>
+      <div className='image'>asd</div>
+      <div className='desc'>
         <p>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
           mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his
@@ -284,7 +284,7 @@ export default function About() {
           tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi
           corrumpit et, fugit apeirian duo ad.
         </p>
-        <div class='info-list'>
+        <div className='info-list'>
           <ul>
             <li>
               <strong>Name:</strong> John Doe
@@ -306,13 +306,13 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div class='bts'>
-          <a href='#' class='btn fill' data-text='Download CV'>
+        <div className='bts'>
+          <a href='#' className='btn fill' data-text='Download CV'>
             Download CV
           </a>
         </div>
       </div>
-      <div class='clear'></div>
+      <div className='clear'></div>
     </Content>
   );
 }
