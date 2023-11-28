@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { dark } from '@/app/colors';
+import { blueLight } from '@/app/colors';
 
 export const Container = styled.main`
   position: relative;
@@ -12,7 +12,7 @@ export const LineTop = styled.div`
   left: 0;
   width: 100%;
   height: 30px;
-  background:  ${dark};
+  background:  ${blueLight};
   z-index: 2;
 `;
 
@@ -22,7 +22,7 @@ export const LineLeft = styled.div`
   left: 0;
   width: 30px;
   height: 100%;
-  background:  ${dark};
+  background:  ${blueLight};
   z-index: 2;
 `;
 
@@ -32,7 +32,7 @@ export const LineRight = styled.div`
   right: 0;
   width: 30px;
   height: 100%;
-  background:  ${dark};
+  background:  ${blueLight};
   z-index: 2;
 `;
 
@@ -42,7 +42,7 @@ export const LineBottom = styled.div`
   left: 0;
   width: 100%;
   height: 30px;
-  background:  ${dark};
+  background:  ${blueLight};
   z-index: 2;
 `;
 

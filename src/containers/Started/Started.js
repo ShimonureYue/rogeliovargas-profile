@@ -1,7 +1,7 @@
 'use client'
 import { useFullHeight } from '@/hooks';
 import { Content, VerticalCenter, HorizontalCenter, Section } from '@/app/styled';
-import { StartedContent } from './styled';
+import { StartedContent, MainTitle, Subtitle, GlitchTitle } from './styled';
 
 const Started = () => {
   const styleHeight = useFullHeight();
@@ -12,8 +12,8 @@ const Started = () => {
       <HorizontalCenter>
         <VerticalCenter >
           <StartedContent>
-            <h1>I&apos;m Rogelio Vargas</h1>
-            <p>Software enginner</p>
+            <GlitchTitle data-text="I&apos;m Rogelio Vargas">I&apos;m Rogelio Vargas</GlitchTitle>
+            <Subtitle>Software enginner</Subtitle>
           </StartedContent>
         </VerticalCenter>
       </HorizontalCenter>

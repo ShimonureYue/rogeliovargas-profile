@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darkGray, white } from '@/app/colors';
+import { blueDark, white } from '@/app/colors';
 
 export const Head = styled.header`
   height: 87px;
@@ -8,7 +8,7 @@ export const Head = styled.header`
   left: 0;
   color: ${white};
   width: 100%;
-  background: ${darkGray};
+  background: ${blueDark};
   opacity: 1;
   visibility: visible;
   z-index: 1;
