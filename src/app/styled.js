@@ -68,5 +68,6 @@ export const HorizontalCenter =  styled.div`
 export const Section = styled.div`
   position: relative;
   text-align: center;
+  transition: all 0.5s ease 0s;
 `;
 
