@@ -67,6 +67,16 @@ const noiseBefore = keyframes`
 }
 `;
 
+const typing = keyframes`
+  from { width: 0 }
+  to { width: 100% }
+`;
+
+const blinkCaret = keyframes`
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+`;
+
 const noiseAfter = keyframes`
   0% {
     clip: rect(26px, 9999px, 33px, 0);
@@ -151,7 +161,6 @@ export const GlitchTitle = styled.div`
     top: 0;
     left: -2px;
     width: 100%;
-    color: 54px;
     background-color: transparent;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
@@ -164,7 +173,6 @@ export const GlitchTitle = styled.div`
     top: 0;
     left: 2px;
     width: 100%;
-    color: 54px;
     background-color: transparent;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
@@ -185,9 +193,10 @@ export const GlitchTitle = styled.div`
 `;
 
 export const StartedContent = styled.div`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   vertical-align: middle;
-  text-align: center;
+  align-items: center;
   position: relative;
 `;
 
@@ -209,9 +218,21 @@ export const MainTitle = styled.h1`
   }
 `;
 
-export const Subtitle = styled.h1`
+export const WrappSubtitle = styled.div`
+  width: fit-content;
+`;
+
+export const Subtitle = styled.h2`
   letter-spacing: 0;
   font-weight: 400;
   font-size: 13px;
   color: ${whiteDark};
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    ${typing} 3.5s steps(${props => props.$characters}, end),
+    ${blinkCaret} .75s step-end infinite;
 `;
