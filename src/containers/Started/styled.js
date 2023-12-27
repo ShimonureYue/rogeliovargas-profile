@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { white, red, whiteDark } from '@/app/colors';
+import { white, red, whiteDark, darkRed } from '@/app/colors';
 
 const noiseBefore = keyframes`
 0% {
@@ -65,16 +65,6 @@ const noiseBefore = keyframes`
 100% {
   clip: rect(173px, 9999px, 166px, 0);
 }
-`;
-
-const typing = keyframes`
-  from { width: 0 }
-  to { width: 100% }
-`;
-
-const blinkCaret = keyframes`
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
 `;
 
 const noiseAfter = keyframes`
@@ -151,7 +141,6 @@ export const GlitchTitle = styled.div`
   font-weight: 700;
   font-size: 68px;
   text-shadow: 2px 0 ${red};
-
   position: relative;
   z-index: 1;
 
@@ -180,11 +169,11 @@ export const GlitchTitle = styled.div`
   }
 
   @media (max-width: 840px) {
-    font-size: 52px;
+    font-size: 48px;
   }
 
   @media (max-width: 480px) {
-    font-size: 42px;
+    font-size: 38px;
 
     &:after, &:before {
       display: none;
@@ -200,39 +189,13 @@ export const StartedContent = styled.div`
   position: relative;
 `;
 
-export const MainTitle = styled.h1`
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin: 10px 0 5px 0;
-  color: ${white};
-  font-weight: 700;
-  font-size: 68px;
-  text-shadow: 2px 0 ${red};
-
-  @media (max-width: 840px) {
-    font-size: 52px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 42px;
-  }
-`;
-
-export const WrappSubtitle = styled.div`
-  width: fit-content;
-`;
 
 export const Subtitle = styled.h2`
   letter-spacing: 0;
   font-weight: 400;
   font-size: 13px;
   color: ${whiteDark};
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    ${typing} 3.5s steps(${props => props.$characters}, end),
-    ${blinkCaret} .75s step-end infinite;
+  :after {
+    color: orange;
+  }
 `;

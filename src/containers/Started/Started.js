@@ -1,33 +1,42 @@
-'use client'
+'use client';
+import { TypeAnimation } from 'react-type-animation';
 import { useFullHeight } from '@/hooks';
-import { Content, VerticalCenter, HorizontalCenter, Section } from '@/app/styled';
-import { StartedContent, WrappSubtitle, Subtitle, GlitchTitle } from './styled';
-
-
+import {
+  Content,
+  VerticalCenter,
+  HorizontalCenter,
+  Section,
+} from '@/app/styled';
+import { StartedContent, Subtitle, GlitchTitle } from './styled';
 
 const Started = () => {
   const styleHeight = useFullHeight();
   const texts = {
     title: "I'm Rogelio Vargas",
-    subtitle: 'Software Enginner'
-  }
-  
+    subtitle: 'Software Enginner',
+    location: 'Bases in Mexico City',
+  };
+
   return (
     <Content>
       <Section style={styleHeight}>
-      <HorizontalCenter>
-        <VerticalCenter >
-          <StartedContent>
-            <GlitchTitle data-text={texts.title}>{texts.title}</GlitchTitle>
-            <WrappSubtitle>
-              <Subtitle $characters={texts.subtitle.length}>{texts.subtitle}</Subtitle>  
-            </WrappSubtitle>
-          </StartedContent>
-        </VerticalCenter>
-      </HorizontalCenter>
+        <HorizontalCenter>
+          <VerticalCenter>
+            <StartedContent>
+              <GlitchTitle aria-label={texts.title} data-text={texts.title}>{texts.title}</GlitchTitle>
+              <Subtitle>
+                <TypeAnimation
+                  aria-label={`${texts.subtitle}, ${texts.location}`}
+                  sequence={[texts.subtitle, 500, texts.location, 500]}
+                  repeat={Infinity}
+                />
+              </Subtitle>
+            </StartedContent>
+          </VerticalCenter>
+        </HorizontalCenter>
       </Section>
-    </Content> 
+    </Content>
   );
 };
-  
-  export default Started;
+
+export default Started;
