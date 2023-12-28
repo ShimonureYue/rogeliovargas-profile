@@ -27,7 +27,7 @@ export const Content = styled.div`
 `;
 
 export const Copy = styled.div`
-  font-size: 11px;
+  font-size: 12px;
   float: left;
   color: ${whiteDark};
 `;
