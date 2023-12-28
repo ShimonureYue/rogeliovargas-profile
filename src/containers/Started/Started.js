@@ -14,7 +14,7 @@ const Started = () => {
   const texts = {
     title: "I'm Rogelio Vargas",
     subtitle: 'Software Enginner',
-    location: 'Bases in Mexico City',
+    location: 'Based in Mexico City',
   };
 
   return (
