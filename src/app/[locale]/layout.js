@@ -1,4 +1,6 @@
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
+import { locales } from '@/navigation';
 import LayoutClient from './LayoutClient';
 
 export const metadata = {
@@ -7,6 +9,7 @@ export const metadata = {
 };
 
 const RootLayout = ({ children, params: { locale } }) => {
+  unstable_setRequestLocale(locale);
   const messages = useMessages();
   return (
     <html lang={locale}>
@@ -17,6 +20,10 @@ const RootLayout = ({ children, params: { locale } }) => {
       </body>
     </html>
   );
+};
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
 };
 
 export default RootLayout;
