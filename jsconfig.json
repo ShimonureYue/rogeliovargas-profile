@@ -4,9 +4,6 @@
       "@/*": [
         "./src/*"
       ],
-      "@/containers/*": [
-        "./src/containers/*"
-      ],
       "@/components/*": [
         "./src/components/*"
       ],

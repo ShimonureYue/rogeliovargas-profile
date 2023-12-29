@@ -1,6 +1,6 @@
 'use client';
-import { Started } from '@/containers/Started';
-import { Header } from '@/containers/Header';
+import { Started } from '@/components/Started';
+import { Header } from '@/components/Header';
 import { Container, LineTop, LineLeft, LineRight, LineBottom } from './styled';
 
 export default function Home() {

@@ -1,4 +1,4 @@
-import { Started } from '@/containers/Started';
+import { Started } from '@/components/Started';
 
 const Page = () => <Started />;
 

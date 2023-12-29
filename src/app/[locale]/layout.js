@@ -8,7 +8,7 @@ export const metadata = {
   description: 'Rogelio Vargas - Profile',
 };
 
-const RootLayout = ({ children, params: { locale } }) => {
+const LocaleLayout = ({ children, params: { locale } }) => {
   unstable_setRequestLocale(locale);
   const messages = useMessages();
   return (
@@ -26,4 +26,4 @@ export function generateStaticParams() {
   return locales.map((locale) => ({locale}));
 };
 
-export default RootLayout;
+export default LocaleLayout;

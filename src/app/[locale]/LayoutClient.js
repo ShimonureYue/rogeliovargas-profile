@@ -1,7 +1,7 @@
 'use client';
 import StyledComponentsRegistry from '@/lib/registry';
-import { Header } from '@/containers/Header';
-import { Footer } from '@/containers/Footer';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import GlobalStyles from './GlobalStyle';
 import { Container, LineTop, LineLeft, LineRight, LineBottom } from '@/app/styled';
 
