@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   reactStrictMode: true,
   trailingSlash: true,
+  i18n: {
+    locales: ['en-US', 'es-MX'],
+    defaultLocale: 'en-US',
+    // localeDetection: false,
+  },
   compiler: {
     styledComponents: true,
   },
