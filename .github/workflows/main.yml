@@ -21,12 +21,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 21
-    
-    - uses: jongwooo/next-cache@v1
-
+        cache: 'npm'
     - name: Install dependecies
-      run: npm ci
-
+      run: npm install
     - name: NextJs Build 
       run: npm run build --if-present
 
