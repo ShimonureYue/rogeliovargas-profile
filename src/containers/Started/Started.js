@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import { TypeAnimation } from 'react-type-animation';
 import { useFullHeight } from '@/hooks';
 import {
@@ -10,24 +11,19 @@ import {
 import { StartedContent, Subtitle, GlitchTitle } from './styled';
 
 const Started = () => {
+  const t = useTranslations('Started');
   const styleHeight = useFullHeight();
-  const texts = {
-    title: "I'm Rogelio Vargas",
-    subtitle: 'Software Enginner',
-    location: 'Based in Mexico City',
-  };
-
   return (
     <Content>
       <Section style={styleHeight}>
         <HorizontalCenter>
           <VerticalCenter>
             <StartedContent>
-              <GlitchTitle aria-label={texts.title} data-text={texts.title}>{texts.title}</GlitchTitle>
+              <GlitchTitle aria-label={t('title')} data-text={t('title')}>{t('title')}</GlitchTitle>
               <Subtitle>
                 <TypeAnimation
-                  aria-label={`${texts.subtitle}, ${texts.location}`}
-                  sequence={[texts.subtitle, 500, texts.location, 500]}
+                  aria-label={`${t('subtitle')}, ${t('location')}`}
+                  sequence={[t('subtitle'), 500, t('location'), 500]}
                   repeat={Infinity}
                 />
               </Subtitle>
