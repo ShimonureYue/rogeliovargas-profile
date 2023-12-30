@@ -8,4 +8,4 @@ export const pathnames = {
   }
 };
 
-export const localePrefix = undefined;
+export const localePrefix = 'always';

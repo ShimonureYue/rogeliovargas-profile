@@ -1,29 +1,43 @@
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import {unstable_setRequestLocale} from 'next-intl/server';
-import { locales } from '@/navigation';
-import LayoutClient from './LayoutClient';
+import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation'
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
+import { locales } from '@/config';
 
-export const metadata = {
-  title: 'Rogelio Vargas',
-  description: 'Rogelio Vargas - Profile',
+export async function generateMetadata({ params: {locale} }) {
+  const t = await getTranslations({locale, namespace: 'LocaleLayout'});
+
+  return {
+    title: t('title'),
+    description: t('description')
+  };
+}
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
 };
 
-const LocaleLayout = ({ children, params: { locale } }) => {
+async function getMessages(locale) {
+  try {
+    return (await import(`../../../messages/${locale}.json`)).default
+  } catch (error) {
+    notFound()
+  }
+}
+
+
+export default async function LocaleLayout  ({ children, params: { locale } }) {
+  
   unstable_setRequestLocale(locale);
-  const messages = useMessages();
+  const messages = await getMessages(locale);
+ 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <LayoutClient>{children}</LayoutClient>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
   );
 };
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
-};
-
-export default LocaleLayout;

@@ -3,9 +3,9 @@ import StyledComponentsRegistry from '@/lib/registry';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import GlobalStyles from './GlobalStyle';
-import { Container, LineTop, LineLeft, LineRight, LineBottom } from '@/app/styled';
+import { Container, LineTop, LineLeft, LineRight, LineBottom } from './styled';
 
-const LayoutClient = ({ children }) => {
+const PageLayout = ({ children }) => {
   return (
     <StyledComponentsRegistry>
       <GlobalStyles />
@@ -20,4 +20,4 @@ const LayoutClient = ({ children }) => {
   );
 };
 
-export default LayoutClient;
+export default PageLayout;

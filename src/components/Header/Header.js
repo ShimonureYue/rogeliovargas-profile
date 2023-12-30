@@ -16,10 +16,9 @@ const Header = () => {
       <select
         defaultValue={locale}
         onChange={e => {
-          console.log('e', e.target.value)
           const nextLocale = e.target.value;
           startTransition(() => {
-            router.push(pathname, {locale: nextLocale});
+            router.push(pathname, {locale: nextLocale, scroll: false});
           });
         }}
       >

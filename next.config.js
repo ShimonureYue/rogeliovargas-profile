@@ -6,11 +6,9 @@ const nextConfig = {
   output: 'export',
   reactStrictMode: true,
   trailingSlash: true,
-  /*
   experimental: {
     webpackBuildWorker: true 
   },
-  */
   compiler: {
     styledComponents: true,
   },
